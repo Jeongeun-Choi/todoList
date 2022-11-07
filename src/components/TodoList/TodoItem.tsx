@@ -5,7 +5,9 @@ function TodoItem({ id, title, onDeleteTodo }: TodoItemProps) {
   return (
     <li key={id} data-id={id}>
       <span>{title}</span>
-      <button onClick={onDeleteTodo}>❌</button>
+      <button id="delete-button" onClick={onDeleteTodo}>
+        ❌
+      </button>
     </li>
   );
 }
